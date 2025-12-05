@@ -1,0 +1,871 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * payment_micuentaweb
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20230530\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-18 12:15+0200\n"
+"PO-Revision-Date: 2023-06-02 06:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.6\n"
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_multi_first
+#, python-format
+msgid "1st installment"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_payment_transaction__micuentaweb_html_3ds
+msgid "3D Secure HTML"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_transaction.py:0
+#, python-format
+msgid "3DS authentication: "
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_transaction.py:0
+#, python-format
+msgid "3DS certificate: "
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model_terms:ir.ui.view,arch_db:payment_micuentaweb.provider_form_micuentawebmulti
+msgid "ATTENTION: The payment in installments feature activation is subject to the prior agreement of Société Générale."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_sign_algo
+#, python-format
+msgid "Algorithm used to compute the payment form signature. Selected algorithm must be the same as one configured in the Izipay Back Office."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_threeds_min_amount
+#, python-format
+msgid ""
+"Amount below which customer could be exempt from strong authentication. Needs subscription to «Selective 3DS1» or «Frictionless 3DS2» options. For more information, refer "
+"to the module documentation."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_multi_first
+#, python-format
+msgid "Amount of first installment, in percentage of total amount. If empty, all installments will have the same amount."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_transaction.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_transaction__micuentaweb_auth_result
+#, python-format
+msgid "Authorization result"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_validation_mode__0
+#, python-format
+msgid "Automatic"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_redirect_enabled
+#, python-format
+msgid "Automatic redirection"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_available_languages
+#, python-format
+msgid "Available languages"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model_terms:ir.ui.view,arch_db:payment_micuentaweb.provider_form_micuentaweb
+msgid "CUSTOM 3DS"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_capture_delay
+#, python-format
+msgid "Capture delay (if applicable)"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_transaction.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_transaction__micuentaweb_card_number
+#, python-format
+msgid "Card number"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_payment_cards
+#, python-format
+msgid "Card types"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_doc
+#, python-format
+msgid "Click to view the module configuration documentation"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_card__code model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_language__code
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__code
+msgid "Code"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_multi_count
+#, python-format
+msgid "Count"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_card__create_uid model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_language__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_card__create_date model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_language__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_language
+#, python-format
+msgid "Default language"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_language
+#, python-format
+msgid "Default language on the payment page."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_multi_period
+#, python-format
+msgid "Delay (in days) between installments."
+msgstr ""
+
+#. module: payment_micuentaweb
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_redirect_enabled__0
+#: model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_embedded_compact_mode__0
+#, python-format
+msgid "Disabled"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_redirect_enabled__1
+#: model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_embedded_compact_mode__1
+#, python-format
+msgid "Enabled"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_card__display_name model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_language__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__environment
+msgid "Environment"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_transaction.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_transaction__micuentaweb_expiration_date
+#, python-format
+msgid "Expiration date"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_return_mode__get
+msgid "GET"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_sign_algo__sha-256
+msgid "HMAC-SHA-256"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_card__id model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_language__id
+msgid "ID"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_redirect_enabled
+#, python-format
+msgid "If enabled, the buyer is automatically redirected to your site at the end of the payment."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_validation_mode
+#, python-format
+msgid "If manual is selected, you will have to confirm payments manually in your Izipay Back Office."
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model_terms:ir.ui.view,arch_db:payment_micuentaweb.provider_form_micuentawebmulti
+msgid ""
+"If you enable this feature while you have not the associated option, an error 10000 – INSTALLMENTS_NOT_ALLOWED or 07 - PAYMENT_CONFIG will occur and the buyer will not be "
+"able to pay."
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__image
+msgid "Image"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_multi_count
+#, python-format
+msgid "Installments number"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_notify_url
+#, python-format
+msgid "Instant Payment Notification URL"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_key_prod
+#, python-format
+msgid "Key in production mode"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_key_test
+#, python-format
+msgid "Key in test mode"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_key_prod
+#, python-format
+msgid "Key provided by Izipay (available in Izipay Back Office after enabling production mode)."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_key_test
+#, python-format
+msgid "Key provided by Izipay for test mode (available in Izipay Back Office)."
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_card__label model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_language__label
+msgid "Label"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_available_languages
+#, python-format
+msgid "Languages available on the payment page. If you do not select any, all the supported languages will be available."
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_card____last_update model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_language____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_card__write_uid model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_language__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_card__write_date model:ir.model.fields,field_description:payment_micuentaweb.field_micuentaweb_language__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:account.payment.method,name:payment_micuentaweb.payment_method_micuentaweb
+msgid "Izipay"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__code__micuentawebmulti
+#: model:payment.provider,name:payment_micuentaweb.payment_provider_micuentawebmulti
+#, python-format
+msgid "Izipay - Payment in installments"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__code__micuentaweb
+#: model:payment.provider,name:payment_micuentaweb.payment_provider_micuentaweb
+#, python-format
+msgid "Izipay - Standard payment"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:account.payment.method,name:payment_micuentaweb.payment_method_micuentawebmulti
+msgid "Izipay Multi"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model,name:payment_micuentaweb.model_micuentaweb_language
+msgid "Izipay language"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model,name:payment_micuentaweb.model_micuentaweb_card
+msgid "Izipay payment card"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_validation_mode__-1
+#, python-format
+msgid "Izipay Back Office Configuration"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model_terms:ir.ui.view,arch_db:payment_micuentaweb.provider_form_micuentaweb
+msgid "MODULE INFORMATION"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_threeds_min_amount
+#, python-format
+msgid "Manage 3DS"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_validation_mode__1
+#, python-format
+msgid "Manual"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_transaction.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_transaction__micuentaweb_card_brand
+#, python-format
+msgid "Means of payment"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_redirect_error_message
+#, python-format
+msgid "Message displayed on the payment page prior to redirection after a declined payment."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_redirect_success_message
+#, python-format
+msgid "Message displayed on the payment page prior to redirection after a successful payment."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_return_mode
+#, python-format
+msgid "Method that will be used for transmitting the payment result from the payment page to your shop."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_transaction.py:0
+#, python-format
+msgid "NO"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model_terms:ir.ui.view,arch_db:payment_micuentaweb.provider_form_micuentaweb
+msgid "PAYMENT GATEWAY ACCESS"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model_terms:ir.ui.view,arch_db:payment_micuentaweb.provider_form_micuentaweb
+msgid "REST API KEYS"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model_terms:ir.ui.view,arch_db:payment_micuentaweb.provider_form_micuentaweb
+msgid "ADVANCED OPTIONS"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model_terms:ir.ui.view,arch_db:payment_micuentaweb.provider_form_micuentawebmulti
+msgid "PAYMENT OPTIONS"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model_terms:ir.ui.view,arch_db:payment_micuentaweb.provider_form_micuentaweb
+msgid "PAYMENT PAGE"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_return_mode__post
+msgid "POST"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model,name:payment_micuentaweb.model_account_payment_method
+msgid "Payment Methods"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model,name:payment_micuentaweb.model_payment_provider
+msgid "Payment Provider"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model,name:payment_micuentaweb.model_payment_transaction
+msgid "Payment Transaction"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:payment.provider,display_as:payment_micuentaweb.payment_provider_micuentaweb
+msgid "Payment by credit card"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:payment.provider,display_as:payment_micuentaweb.payment_provider_micuentawebmulti
+msgid "Payment by credit card in installments"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_multi_period
+#, python-format
+msgid "Period"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model_terms:ir.ui.view,arch_db:payment_micuentaweb.provider_form_micuentaweb
+msgid "RETURN TO SHOP"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_redirect_error_message
+#, python-format
+msgid "Redirection message on failure"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_redirect_success_message
+#, python-format
+msgid "Redirection message on success"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_redirect_error_timeout
+#, python-format
+msgid "Redirection timeout on failure"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_redirect_success_timeout
+#, python-format
+msgid "Redirection timeout on success"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0
+#, python-format
+msgid "Redirection to shop in a few seconds..."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_return_mode
+#, python-format
+msgid "Return mode"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_sign_algo__sha-1
+msgid "SHA-1"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_transaction.py:0
+#, python-format
+msgid "See the transaction details for more information ({})."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_site_id
+#, python-format
+msgid "Shop ID"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_sign_algo
+#, python-format
+msgid "Signature algorithm"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0
+#, python-format
+msgid "The HMAC-SHA-256 algorithm should not be activated if it is not yet available in the Izipay Back Office, the feature will be available soon."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_payment_cards
+#, python-format
+msgid "The card type(s) that can be used for the payment. Select none to use gateway configuration."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_site_id
+#, python-format
+msgid "The identifier provided by Izipay."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_capture_delay
+#, python-format
+msgid "The number of days before the bank capture (adjustable in your Izipay Back Office)."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0
+#, python-format
+msgid "The shop currency {} is not supported."
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__code
+msgid "The technical code of this payment provider."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_redirect_error_timeout
+#, python-format
+msgid "Time in seconds (0-300) before the buyer is automatically redirected to your website after a declined payment."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_redirect_success_timeout
+#, python-format
+msgid "Time in seconds (0-300) before the buyer is automatically redirected to your website after a successful payment."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_transaction.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_transaction__micuentaweb_raw_data
+#: model_terms:ir.ui.view,arch_db:payment_micuentaweb.transaction_form_micuentaweb
+#, python-format
+msgid "Transaction log"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_transaction.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_transaction__micuentaweb_trans_status
+#, python-format
+msgid "Transaction status"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_notify_url
+#: model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_rest_api_notify_url
+#, python-format
+msgid "URL to copy into your Izipay Back Office > Settings > Notification rules."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_validation_mode
+#, python-format
+msgid "Validation mode (if applicable)"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_transaction.py:0
+#, python-format
+msgid "YES"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: model_terms:payment.provider,pre_msg:payment_micuentaweb.payment_provider_micuentaweb model_terms:payment.provider,pre_msg:payment_micuentaweb.payment_provider_micuentawebmulti
+msgid "You will be redirected to the Izipay website after clicking on the payment button."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_test_password
+msgid "Test password"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_prod_password
+msgid "Production password"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_public_test_key
+msgid "Public test key"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_public_production_key
+msgid "Public production key"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_sha256_test_key
+msgid "HMAC-SHA-256 test key"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_sha256_prod_key
+msgid "HMAC-SHA-256 production key"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_test_password
+#: model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_prod_password model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_public_test_key
+#: model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_public_production_key
+#: model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_sha256_test_key model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_sha256_prod_key
+msgid "REST API keys are available in your Izipay Back Office (menu: Settings > Shops > REST API keys)."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_rest_api_notify_url
+msgid "REST API Notification URL"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_payment_data_entry_mode
+msgid "Payment data entry mode"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_payment_data_entry_mode
+msgid "Select how the payment data will be entered. Attention, to use the embedded payment fields, you must ensure that you have subscribed to this option with Izipay."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Bank data acquisition on payment gateway"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+#. odoo-python
+msgid "Embedded payment fields on merchant site (REST API)"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Embedded payment fields extended on merchant site with logos (REST API)"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Embedded payment fields extended on merchant site without logos (REST API)"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_embedded_pop_in
+msgid "Display in a pop-in"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_embedded_pop_in
+msgid "This option allows to display the embedded payment fields in a pop-in."
+msgstr ""
+
+#. module: payment_micuentaweb
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_embedded_pop_in__0
+#, python-format
+msgid "No"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields.selection,name:payment_micuentaweb.selection__payment_provider__micuentaweb_embedded_pop_in__1
+#, python-format
+msgid "Yes"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_embedded_theme
+msgid "Theme"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_embedded_theme
+msgid "Select a theme to use to display the embedded payment fields."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_embedded_compact_mode
+msgid "Compact mode"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_embedded_compact_mode
+msgid "This option allows to display the embedded payment fields in a compact mode."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,field_description:payment_micuentaweb.field_payment_provider__micuentaweb_embedded_payment_attempts
+msgid "Payment attempts number for cards"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/models/payment_provider.py:0 model:ir.model.fields,help:payment_micuentaweb.field_payment_provider__micuentaweb_embedded_payment_attempts
+msgid "Maximum number of payment by cards retries after a failed payment (between 0 and 2). If blank, the gateway default value is 2."
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Chinese"
+msgstr ""
+
+#. module: payment_micuentaweb
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+#, python-format
+msgid "German"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Spanish"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "English"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "French"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Italian"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Japanese"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Dutch"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Polish"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Portuguese"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Russian"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Swedish"
+msgstr ""
+
+#. module: payment_micuentaweb
+#. odoo-python
+#: code:addons/payment_micuentaweb/helpers/tools.py:0
+msgid "Turkish"
+msgstr ""

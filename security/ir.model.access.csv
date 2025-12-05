@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_micuentaweb_card_system,micuentaweb.card.system,model_micuentaweb_card,base.group_system,1,1,1,1
+access_micuentaweb_language_system,micuentaweb.language.system,model_micuentaweb_language,base.group_system,1,1,1,1

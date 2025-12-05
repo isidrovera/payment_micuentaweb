@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+# Copyright © Lyra Network.
+# This file is part of Izipay plugin for Odoo. See COPYING.md for license details.
+#
+# Author:    Lyra Network (https://www.lyra.com)
+# Copyright: Copyright © Lyra Network
+# License:   http://www.gnu.org/licenses/agpl.html GNU Affero General Public License (AGPL v3)
+-->
+
+<odoo noupdate="1">
+    <record id="payment_method_micuentaweb" model="payment.method">
+        <field name="name"><![CDATA[Izipay]]></field>
+        <field name="code">micuentaweb</field>
+        <field name="sequence">1000</field>
+        <field name="image" type="base64" file="payment/static/img/card.png" />
+        <field name="support_tokenization">False</field>
+        <field name="support_express_checkout">False</field>
+    </record>
+
+    <record id="payment_method_micuentawebmulti" model="payment.method">
+        <field name="name"><![CDATA[Izipay Multi]]></field>
+        <field name="code">micuentawebmulti</field>
+        <field name="sequence">1000</field>
+        <field name="image" type="base64" file="payment/static/img/card.png" />
+        <field name="support_tokenization">False</field>
+        <field name="support_express_checkout">False</field>
+    </record>
+
+    <record id="payment_method_micuentawebcb" model="payment.method">
+        <field name="name">CB</field>
+        <field name="code">micuentawebcb</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentaweb')" />
+        <field name="sequence">1000</field>
+        <field name="active">True</field>
+        <field name="image" type="base64" file="payment_micuentaweb/static/src/img/cb.png" />
+    </record>
+
+    <record id="payment_method_micuentawebvisa" model="payment.method">
+        <field name="name">Visa</field>
+        <field name="code">micuentawebvisa</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentaweb')" />
+        <field name="sequence">1000</field>
+        <field name="active">True</field>
+        <field name="image" type="base64" file="payment/static/img/visa.png" />
+    </record>
+
+    <record id="payment_method_micuentawebmastercard" model="payment.method">
+        <field name="name">Mastercard</field>
+        <field name="code">micuentawebmastercard</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentaweb')" />
+        <field name="sequence">1000</field>
+        <field name="active">True</field>
+        <field name="image" type="base64" file="payment/static/img/mastercard.png" />
+    </record>
+
+    <record id="payment_method_micuentawebamex" model="payment.method">
+        <field name="name">American Express</field>
+        <field name="code">micuentawebamex</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentaweb')" />
+        <field name="sequence">1000</field>
+        <field name="active">True</field>
+        <field name="image" type="base64" file="payment/static/img/amex.png" />
+    </record>
+
+     <record id="payment_method_micuentawebecardtebleue" model="payment.method">
+        <field name="name">e-Carte Bleue</field>
+        <field name="code">micuentawebecartebleue</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentaweb')" />
+        <field name="sequence">1000</field>
+        <field name="active">False</field>
+        <field name="image" type="base64" file="payment_micuentaweb/static/src/img/e-cartebleue.png" />
+    </record>
+
+    <record id="payment_method_micuentawebvisaelectron" model="payment.method">
+        <field name="name">Visa Electron</field>
+        <field name="code">micuentawebvisaelectron</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentaweb')" />
+        <field name="sequence">1000</field>
+        <field name="active">False</field>
+        <field name="image" type="base64" file="payment_micuentaweb/static/src/img/visa_electron.png" />
+    </record>
+
+    <record id="payment_method_micuentawebvpay" model="payment.method">
+        <field name="name">V PAY</field>
+        <field name="code">micuentawebvpay</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentaweb')" />
+        <field name="sequence">1000</field>
+        <field name="active">False</field>
+        <field name="image" type="base64" file="payment/static/img/vpay.png" />
+    </record>
+
+    <record id="payment_method_micuentawebapplepay" model="payment.method">
+        <field name="name">Apple Pay</field>
+        <field name="code">micuentawebapplepay</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentaweb')" />
+        <field name="sequence">1000</field>
+        <field name="active">False</field>
+        <field name="image" type="base64" file="payment/static/img/apple_pay.png" />
+    </record>
+
+     <record id="payment_method_micuentawebpaypal" model="payment.method">
+        <field name="name">PayPal</field>
+        <field name="code">micuentawebpaypal</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentaweb')" />
+        <field name="sequence">1000</field>
+        <field name="active">False</field>
+        <field name="image" type="base64" file="payment/static/img/paypal.png" />
+    </record>
+
+    <record id="payment_method_micuentawebmulticb" model="payment.method">
+        <field name="name">CB</field>
+        <field name="code">micuentawebmulticb</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentawebmulti')" />
+        <field name="sequence">1000</field>
+        <field name="active">True</field>
+        <field name="image" type="base64" file="payment_micuentaweb/static/src/img/cb.png" />
+    </record>
+
+    <record id="payment_method_micuentawebmultivisa" model="payment.method">
+        <field name="name">Visa</field>
+        <field name="code">micuentawebmultivisa</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentawebmulti')" />
+        <field name="sequence">1000</field>
+        <field name="active">True</field>
+        <field name="image" type="base64" file="payment/static/img/visa.png" />
+    </record>
+
+    <record id="payment_method_micuentawebmultimastercard" model="payment.method">
+        <field name="name">Mastercard</field>
+        <field name="code">micuentawebmultimastercard</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentawebmulti')" />
+        <field name="sequence">1000</field>
+        <field name="active">True</field>
+        <field name="image" type="base64" file="payment/static/img/mastercard.png" />
+    </record>
+
+    <record id="payment_method_micuentawebmultiamex" model="payment.method">
+        <field name="name">American Express</field>
+        <field name="code">micuentawebmultiamex</field>
+        <field name="primary_payment_method_id" eval="ref('payment_method_micuentawebmulti')" />
+        <field name="sequence">1000</field>
+        <field name="active">True</field>
+        <field name="image" type="base64" file="payment/static/img/amex.png" />
+    </record>
+</odoo>
