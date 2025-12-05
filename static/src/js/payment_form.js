@@ -189,23 +189,47 @@ paymentForm.include({
 
                         // Fallback 1: redirigir directamente si tenemos URL.
                         if (processingValues && processingValues.redirect_url) {
+                            console.log('Redirecting to:', processingValues.redirect_url);
                             window.location.href = processingValues.redirect_url;
                             return;
                         }
 
                         // Fallback 2: usar el flujo redirect de Odoo sólo si existe el formulario.
+                        // Esperamos un momento para asegurar que el DOM esté listo.
+                        await new Promise(resolve => setTimeout(resolve, 100));
+                        
                         const redirectForm = document.querySelector('#o_payment_redirect_form');
                         if (redirectForm) {
-                            return this._processRedirectFlow(
-                                providerCode,
-                                paymentOptionId,
-                                paymentMethodCode,
-                                processingValues
-                            );
+                            console.log('Redirect form found, processing redirect flow...');
+                            
+                            // Verificar que el formulario tenga los elementos necesarios
+                            try {
+                                return this._processRedirectFlow(
+                                    providerCode,
+                                    paymentOptionId,
+                                    paymentMethodCode,
+                                    processingValues
+                                );
+                            } catch (error) {
+                                console.error('Error in _processRedirectFlow:', error);
+                                this._displayErrorDialog(
+                                    'Payment Error',
+                                    'Unable to process payment redirect. Please try again or contact support.'
+                                );
+                                this._enableButton();
+                                return;
+                            }
                         } else {
                             console.error(
                                 'Redirect form not found (#o_payment_redirect_form). Cannot process redirect flow.'
                             );
+                            
+                            // Mostrar mensaje de error al usuario
+                            this._displayErrorDialog(
+                                'Payment Error',
+                                'Unable to initialize payment form. Please refresh the page and try again.'
+                            );
+                            this._enableButton();
                             return;
                         }
                     } else if (data.formToken === 'NO_UPDATE') {
@@ -215,11 +239,35 @@ paymentForm.include({
                         localStorage.setItem('micuentawebFormToken', formToken);
                         localStorage.setItem('micuentawebFormTokenData', JSON.stringify(inlineValues));
                     }
+                })
+                .catch((error) => {
+                    console.error('Error creating form token:', error);
+                    this._displayErrorDialog(
+                        'Payment Error',
+                        'Unable to connect to payment service. Please check your connection and try again.'
+                    );
+                    this._enableButton();
+                    return;
                 });
         }
 
-        await KR.setFormConfig({ formToken: formToken });
-        this._micuentawebSubmitPayment();
+        // Solo continuar si tenemos un token válido
+        if (!formToken) {
+            console.error('No valid form token available');
+            return;
+        }
+
+        try {
+            await KR.setFormConfig({ formToken: formToken });
+            this._micuentawebSubmitPayment();
+        } catch (error) {
+            console.error('Error setting form config:', error);
+            this._displayErrorDialog(
+                'Payment Error',
+                'Unable to initialize payment. Please try again.'
+            );
+            this._enableButton();
+        }
     },
 
     _micuentawebSubmitPayment() {
@@ -240,5 +288,23 @@ paymentForm.include({
         }
 
         await this._super(...arguments);
+    },
+
+    /**
+     * Helper method to display error messages to the user
+     */
+    _displayErrorDialog(title, message) {
+        if (this.call && this.call('notification', 'add')) {
+            // Odoo 16+ notification system
+            this.call('notification', 'add', {
+                title: title,
+                message: message,
+                type: 'danger',
+                sticky: false,
+            });
+        } else {
+            // Fallback: usar alert si no hay sistema de notificaciones
+            alert(`${title}\n\n${message}`);
+        }
     },
 });
